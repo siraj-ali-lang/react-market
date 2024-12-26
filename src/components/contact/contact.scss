@@ -1,0 +1,137 @@
+.contact-container{
+    max-width: 700px;
+    margin: auto;
+
+    .title{
+        font-weight: 100;
+        font-size: 25px;
+        text-align: center;
+        margin: 50px 0;
+        background: linear-gradient(to right,skyblue,red,blue);
+        background-size: 200%;
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+        animation: animate-gradiant 2.5s linear infinite;
+    }
+
+    .content{
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid #fff;
+        padding-top: 15px;
+
+        .call-me{
+            margin: auto;
+            padding-bottom: 15px;
+
+            button:hover{
+                background-color: rgb(25, 219, 34);
+                cursor: pointer;
+
+                a{
+                    color: black;
+                }
+            }
+            button{
+                background-color: rgb(2, 194, 12);
+                padding: 8px 45px;
+                border: none;
+                border-radius: 20px;
+
+                a{
+                    text-decoration: none;
+                    font-size: 19px;
+                    color: #fff;
+                }
+            }
+        }
+
+        .text-icons{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 15px;
+
+
+            .text{
+
+                h3{
+                    margin: 2px 0;
+                    padding: 0;
+                    font-weight: 100;
+                    color: #d4d2d2;
+                }
+            }
+            .icons{
+                border-left: 1px solid #fff;
+                padding-left: 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .icon{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+
+                    span{
+                        color: #e0dddd;
+                        font-weight: 100;
+                        cursor: pointer;
+                    }
+
+                    .facebook{
+                    color: rgb(8, 78, 105);
+                    font-size: 20px;
+                    cursor: pointer;
+                    }
+                    .facebook:hover{
+                        color: rgb(4, 60, 82);
+                    }
+                    .instagram{
+                    color: rgb(201, 30, 7);
+                    font-size: 20px;
+                    cursor: pointer;
+                    }
+                    .instagram:hover{
+                        color: rgb(214, 56, 36);
+                    }
+                    .linkedin{
+                    color: rgb(8, 78, 105);
+                    font-size: 20px;
+                    cursor: pointer;
+                    }
+                    .linkedin:hover{
+                        color: rgb(6, 63, 85);
+                    }
+                }
+
+            }
+        }
+    }
+}
+@keyframes animate-gradiant{
+    to{
+        background-position: 200%;
+    }
+}
+@media(max-width:700px){
+    .contact-container{
+
+        .content{
+
+
+            h3{
+                font-size: 16px;
+            }
+            span{
+                font-size: 15px;
+            }
+            .text-icons{
+                padding: 0 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+.about-container{
+    margin-top: 270px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    
+    
+
+
+    .title{
+        text-align: center;
+        margin: 30px 0;
+        background: linear-gradient(to right,skyblue,red,blue);
+        background-size: 200%;
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+        animation: animate-gradiant 2.5s linear infinite;
+    }
+    .content{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        background-color: hsla(0, 0%, 0%, 0.473);
+        padding-left: 4px;
+        flex-wrap: wrap;
+
+
+        .text{
+            flex: 1.5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-width: 460px;
+
+            .styled-h1{
+                font-weight: 100;
+                background-color: #d3551a;
+                padding: 2px 15px;
+                border-radius: 8px;
+            }
+            h1{
+                font-weight: 100;
+            }
+
+            p{
+                font-size: 22px;
+                font-weight: 50;
+                color: #cfcbcb;
+            }
+        }
+        .image{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+@keyframes animate-gradiant{
+    to{
+        background-position: 200%;
+    }
+}
+@media(max-width:680px){
+    .about-container{
+        margin-top: 20px;
+
+
+        .content{
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            background-color: hsla(0, 0%, 0%, 0.473);
+            padding-left: 4px;
+            flex-wrap: wrap;
+    
+    
+            .text{
+                flex: 1.5;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                min-width: 390px;
+
+                p{
+                    text-align: center;
+                }
+    
+                .styled-h1{
+                    font-weight: 100;
+                    background-color: #d3551a;
+                    padding: 2px 15px;
+                    border-radius: 8px;
+                }
+                h1{
+                    font-weight: 100;
+                }
+    
+                p{
+                    font-size: 22px;
+                    font-weight: 50;
+                    color: #cfcbcb;
+                }
+            }
+            .image{
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
